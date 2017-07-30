@@ -20,7 +20,6 @@ class DLProgress(tqdm):
         self.update((block_num - self.last_block) * block_size)
         self.last_block = block_num
 
-
 def maybe_download_pretrained_vgg(data_dir):
     """
     Download and extract pretrained vgg model if it doesn't exist
